@@ -15,14 +15,25 @@ public class nhanvien {
     private double tienluong;
     private int tongsogiolam;
     private double thuong;
+    nhanvien(){
+        ho="Vo Ngoc ";
+        ten="Khoa";
+        diachi="to 14 ngoc thao ngoc hiep nha trang khanh hoa";
+        tienluong=1000000;
+        tongsogiolam=200;
+        
+    }
     
      
-    public nhanvien(String ho, String ten) {
+    public nhanvien(String ho, String ten, String diachi, double tienluong, int tongsogiolam ) {
         this.ho = ho;
         this.ten = ten;
         this.diachi = diachi;
          
      }
+
+
+    
  
     public String getho() {
         return ho;
@@ -65,8 +76,18 @@ public class nhanvien {
             thuong = 0;
             return thuong;
         }   
-}       
-    
+
+    void inputInfo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void printInfo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+} 
+
+
 
 
 
