@@ -22,41 +22,52 @@ public class nhanvien {
         this.ten = ten;
         this.diachi = diachi;
          
-      
-    }
+     }
  
     public String getho() {
         return ho;
     }
- 
     public void setho(String ho) {
         this.ho = ho;
     }
- 
     public String getTen() {
         return ten;
     }
- 
     public void setTen(String ten) {
         this.ten = ten;
     }
-    
     public String getDiachi() {
         return diachi;
     }    
-    
     public void setDiachi(String diachi) {
         this.diachi = diachi;  
     }    
     
-    public double getThuong(double tongsogiolam) {
-        if (tongsogiolam >= 200) {
+    double gettienluong(){
+        return tienluong;
+    }
+    void settienluong (double tienluong){
+        this.tienluong = tienluong;
+    }
+    double gettongsogiolam(){
+        return tongsogiolam;
+    }
+    void settongsogiolam (int tongsogiolam){
+        this.tongsogiolam = tongsogiolam;
+    }
+           
+    public double getThuong(double tongsogiolam){
+        if (tongsogiolam >= 200) 
             thuong = tongsogiolam * 20/100 ;
-        } else if (tongsogiolam < 200 && tongsogiolam <=100)  {
+        else if (tongsogiolam < 200 && tongsogiolam <=100)  
             thuong = this.tongsogiolam * 10/100;
-        } else if (tongsogiolam < 100) {
+        else 
             thuong = 0;
-        }    
+            return thuong;
+        }   
+}       
+    
+
 
 
     
