@@ -57,12 +57,6 @@ public class nhanvien {
         } else if (tongsogiolam < 100) {
             thuong = 0;
         }    
-public static void main(String[] args) {
-        nhanvien nhanVien1 = new nhanvien("Nguyen", "Thi",);
-        NhanVien nhanVien2 = new NhanVien("Lê", "Vy", 199);
-        System.out.println("Tiền lương của nhân viên 1 = " + nhanVien1.getLuong(nhanVien1.getSoSP()));
-        System.out.println("Tiền lương của nhân viên 2 = " + nhanVien2.getLuong(nhanVien2.getSoSP()));
-     
 
 
     
